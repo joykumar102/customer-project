@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div className=''>
-            <div className="navbar bg-base-100 shadow-sm lg:px-20">
+            <div className="navbar bg-base-100 shadow-sm lg:px-10">
                 <div className="navbar-start">
 
                     <a className="text-xl lg:text-2xl font-bold">CS — Ticket System </a>

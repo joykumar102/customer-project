@@ -1,276 +1,103 @@
 [
   {
     "id": 1,
-    "title": "Login page not working",
-    "description": "User cannot log in with correct credentials.",
-    "customer": "Rahim Uddin",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2026-03-01T09:15:00Z"
-  },
-  {
-    "id": 2,
-    "title": "Payment gateway error",
-    "description": "Payment fails during checkout process.",
-    "customer": "Nusrat Jahan",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2026-03-01T10:30:00Z"
-  },
-  {
-    "id": 3,
-    "title": "Profile image upload issue",
-    "description": "Unable to upload profile picture.",
-    "customer": "Tanvir Hasan",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2026-03-01T11:45:00Z"
-  },
-  {
-    "id": 4,
-    "title": "Password reset email not received",
-    "description": "Customer did not receive reset password email.",
-    "customer": "Ayesha Akter",
-    "priority": "High",
-    "status": "Resolved",
-    "createdAt": "2026-03-01T12:10:00Z"
-  },
-  {
-    "id": 5,
-    "title": "Website loading slowly",
-    "description": "Homepage takes too long to load.",
-    "customer": "Imran Hossain",
-    "priority": "Medium",
-    "status": "In Progress",
-    "createdAt": "2026-03-01T13:00:00Z"
-  },
-  {
-    "id": 6,
-    "title": "Error 404 on product page",
-    "description": "Product details page shows 404 error.",
-    "customer": "Sadia Islam",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2026-03-01T14:20:00Z"
-  },
-  {
-    "id": 7,
-    "title": "Cart not updating",
-    "description": "Items are not updating in the shopping cart.",
-    "customer": "Farhan Ahmed",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2026-03-01T15:10:00Z"
-  },
-  {
-    "id": 8,
-    "title": "Mobile view layout broken",
-    "description": "UI elements overlap on mobile devices.",
-    "customer": "Mithila Roy",
-    "priority": "Low",
-    "status": "In Progress",
-    "createdAt": "2026-03-01T16:05:00Z"
-  },
-  {
-    "id": 9,
-    "title": "Search function not returning results",
-    "description": "Search bar shows no results for valid keywords.",
-    "customer": "Arif Khan",
-    "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2026-03-01T17:25:00Z"
-  },
-  {
-    "id": 10,
-    "title": "Order confirmation email delayed",
-    "description": "Order confirmation email received after several hours.",
-    "customer": "Jannat Ferdous",
-    "priority": "Low",
-    "status": "Resolved",
-    "createdAt": "2026-03-01T18:40:00Z"
-  },
-  {
-    "id": 11,
-    "title": "Account locked unexpectedly",
-    "description": "Customer account locked without reason.",
-    "customer": "Hasan Mahmud",
-    "priority": "High",
-    "status": "Open",
-    "createdAt": "2026-03-02T08:15:00Z"
-  },
-  {
-    "id": 12,
-    "title": "Discount code not applying",
-    "description": "Promo code shows invalid during checkout.",
-    "customer": "Sumaiya Rahman",
-    "priority": "Medium",
-    "status": "In Progress",
-    "createdAt": "2026-03-02T09:30:00Z"
-  },
-  {
-    "id": 13,
-    "title": "Notification settings not saving",
-    "description": "Changes in notification preferences are not saved.",
-    "customer": "Sakib Chowdhury",
-    "priority": "Low",
-    "status": "Open",
-    "createdAt": "2026-03-02T10:45:00Z"
-  },
-  {
-    "id": 14,
-    "title": "App crashes on startup",
-    "description": "Mobile app crashes immediately after launch.",
-    "customer": "Rima Sultana",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2026-03-02T11:20:00Z"
-  },
-  {
-    "id": 15,
-    "title": "Unable to download invoice",
-    "description": "Invoice download button not working.",
-    "customer": "Kabir Ahmed",
-    "priority": "Medium",
-    "status": "Resolved",
-    "createdAt": "2026-03-02T12:00:00Z"
-  }
-],
-
-
-[
-  {
-    "id": 1,
     "title": "Login page error",
     "description": "User cannot login despite correct credentials, system shows invalid password message and prevents access to dashboard page.",
-    "customer": "Rahim Ahmed",
+    "customer": "John Smith",
     "priority": "High",
     "status": "Open",
-    "createdAt": "2026-03-01T10:15:00Z"
+    "createdAt": "2026-03-01",
+    "rank": 1001
   },
   {
     "id": 2,
     "title": "Payment gateway issue",
     "description": "Customer completed payment successfully but order not confirmed, transaction amount deducted and no confirmation email received yet.",
-    "customer": "Karim Uddin",
+    "customer": "Michael Brown",
     "priority": "Critical",
-    "status": "In Progress",
-    "createdAt": "2026-03-01T11:20:00Z"
+    "status": "Opne",
+    "createdAt": "2026-03-01",
+    "rank": 1002
   },
   {
     "id": 3,
     "title": "Profile update bug",
     "description": "User attempts to update profile picture but upload fails repeatedly without error message or any notification displayed.",
-    "customer": "Nusrat Jahan",
+    "customer": "David Wilson",
     "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2026-03-01T12:05:00Z"
+    "status": "In Progress",
+    "createdAt": "2026-03-01",
+    "rank": 1003
   },
   {
     "id": 4,
     "title": "Slow website loading",
     "description": "Homepage loads very slowly during peak hours, causing frustration and multiple refresh attempts from users frequently.",
-    "customer": "Tanvir Hasan",
+    "customer": "James Anderson",
     "priority": "High",
     "status": "In Progress",
-    "createdAt": "2026-03-01T13:40:00Z"
+    "createdAt": "2026-03-01",
+    "rank": 1004
   },
   {
     "id": 5,
-    "title": "Forgot password email not sent",
+    "title": "Forgot password ",
     "description": "User requested password reset link but did not receive email after multiple attempts from system.",
-    "customer": "Farzana Akter",
+    "customer": "Liam Thomas",
     "priority": "Medium",
     "status": "Resolved",
-    "createdAt": "2026-03-01T14:10:00Z"
+    "createdAt": "2026-03-01",
+    "rank": 1005
   },
   {
     "id": 6,
     "title": "Cart not updating",
     "description": "Items added to cart disappear automatically after refreshing page or navigating to another section.",
-    "customer": "Imran Hossain",
+    "customer": "Sarah Johnson",
     "priority": "High",
-    "status": "Open",
-    "createdAt": "2026-03-01T15:25:00Z"
+    "status": "In Progress",
+    "createdAt": "2026-03-01",
+    "rank": 1006
   },
   {
     "id": 7,
     "title": "Order confirmation delay",
     "description": "Customer placed order successfully but confirmation message and email notification delayed significantly causing confusion.",
-    "customer": "Sadia Islam",
+    "customer": "Emily Davis",
     "priority": "Low",
-    "status": "Closed",
-    "createdAt": "2026-03-01T16:00:00Z"
+    "status": "Open",
+    "createdAt": "2026-03-01",
+    "rank": 1007
   },
   {
     "id": 8,
     "title": "Search function not working",
     "description": "Search feature returns empty results even when valid product names are entered correctly by users.",
-    "customer": "Arif Chowdhury",
+    "customer": "Sophia Taylor",
     "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2026-03-02T09:10:00Z"
+    "status": "Open",
+    "createdAt": "2026-03-02",
+    "rank": 1008
   },
   {
     "id": 9,
     "title": "Mobile layout issue",
     "description": "Website layout breaks on smaller screens, overlapping text and images reduce usability significantly.",
-    "customer": "Mithila Rahman",
+    "customer": "Olivia Martinez",
     "priority": "Medium",
-    "status": "Open",
-    "createdAt": "2026-03-02T10:30:00Z"
+    "status": "In Progress",
+    "createdAt": "2026-03-02",
+    "rank": 1009
   },
   {
     "id": 10,
     "title": "Coupon code invalid",
     "description": "Valid promotional coupon code shows invalid error message during checkout process unexpectedly.",
-    "customer": "Sabbir Alam",
+    "customer": "Isabella Garcia",
     "priority": "Low",
     "status": "Resolved",
-    "createdAt": "2026-03-02T11:45:00Z"
-  },
-  {
-    "id": 11,
-    "title": "Dashboard crash",
-    "description": "Admin dashboard crashes immediately after login, preventing access to reports and management features.",
-    "customer": "Mehedi Hasan",
-    "priority": "Critical",
-    "status": "Open",
-    "createdAt": "2026-03-02T12:20:00Z"
-  },
-  {
-    "id": 12,
-    "title": "Image upload failed",
-    "description": "Product image upload fails repeatedly with timeout error despite stable internet connection.",
-    "customer": "Jannat Ara",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2026-03-02T13:15:00Z"
-  },
-  {
-    "id": 13,
-    "title": "Notification not showing",
-    "description": "Users not receiving real time notifications for new messages or order updates.",
-    "customer": "Rakib Khan",
-    "priority": "Medium",
-    "status": "Closed",
-    "createdAt": "2026-03-02T14:05:00Z"
-  },
-  {
-    "id": 14,
-    "title": "Account suspension error",
-    "description": "Active customer account marked suspended incorrectly without warning or proper verification process.",
-    "customer": "Lamia Sultana",
-    "priority": "Critical",
-    "status": "Open",
-    "createdAt": "2026-03-02T15:30:00Z"
-  },
-  {
-    "id": 15,
-    "title": "Checkout button not clickable",
-    "description": "Checkout button remains disabled even after all required fields completed correctly.",
-    "customer": "Rafiul Islam",
-    "priority": "High",
-    "status": "In Progress",
-    "createdAt": "2026-03-02T16:45:00Z"
+    "createdAt": "2026-03-02",
+    "rank": 1010
   }
+  
 ]

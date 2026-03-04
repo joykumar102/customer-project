@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer sm:footer-horizontal bg-neutral text-white  p-10 lg:px-20">
+            <footer className="footer sm:footer-horizontal bg-neutral text-white  p-10 lg:px-10">
   <nav>
     <h6 className="text-xl font-bold ">CS — Ticket System</h6>
     <p className='w-62 '>A CS Ticket System is a centralized customer support platform that collects, organizes, tracks, and manages service requests efficiently, assigns tickets to appropriate agents, monitors progress, and ensures timely communication and problem resolution.</p>
