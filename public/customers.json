@@ -15,7 +15,7 @@
     "description": "Customer completed payment successfully but order not confirmed, transaction amount deducted and no confirmation email received yet.",
     "customer": "Michael Brown",
     "priority": "Critical",
-    "status": "Opne",
+    "status": "Open",
     "createdAt": "2026-03-01",
     "rank": 1002
   },
