@@ -11,7 +11,7 @@ import { Bounce, ToastContainer } from 'react-toastify'
 
 
 const fetchCustomers = async () => {
-  const res = await fetch("/public/customers.json")
+  const res = await fetch("/customers.json")
   return res.json()
 }
 
