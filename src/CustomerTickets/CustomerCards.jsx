@@ -2,7 +2,7 @@ import React, { use } from 'react';
 import { toast } from 'react-toastify';
 
 
-const CustomerCards = ({ customerPromise, customersTask, setCustomersTask , setInProgressCount, inProgressCount, resolvedCount,  setResolvedCount}) => {
+const CustomerCards = ({ customerPromise, customersTask, setCustomersTask , setInProgressCount, inProgressCount, resolvedCount,  setResolvedCount, removedSelectedTask}) => {
 
     const customerData = use(customerPromise);
 

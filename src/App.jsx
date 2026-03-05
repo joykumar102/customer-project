@@ -20,17 +20,26 @@ const customerPromise = fetchCustomers()
 
 const [customersTask, setCustomersTask] = useState([]);
 
-const [inProgressCount, setInProgressCount] = useState(0);
+const [inProgressCount, setInProgressCount] = useState([]);
+console.log(inProgressCount)
 
-const [resolvedCount, setResolvedCount] = useState(0);
+const [resolvedCount, setResolvedCount] = useState([]);
+
+
+  const removedSelectedTask = (id) => {
+    setCustomersTask(customersTask.filter((task) => task.id !== id));
+    const remainingTickets = customersTask.filter(t => t.id !== id);
+  setCustomersTask(remainingTickets);
+  }
 
 
   return (
     <>
       <Navbar></Navbar>
 
-      <Banner inProgressCount={inProgressCount} setInProgressCount={setInProgressCount} 
-      resolvedCount={resolvedCount} setResolvedCount={setResolvedCount}
+      <Banner customersTask={customersTask}  inProgressCount={inProgressCount} setInProgressCount={setInProgressCount} 
+      resolvedCount={resolvedCount} setResolvedCount={setResolvedCount} 
+      
       ></Banner>
 
       <CustomerTickets customerPromise={customerPromise} customersTask={customersTask}
@@ -39,6 +48,7 @@ const [resolvedCount, setResolvedCount] = useState(0);
        setInProgressCount={setInProgressCount}
        resolvedCount={resolvedCount}
        setResolvedCount={setResolvedCount}
+       removedSelectedTask={removedSelectedTask}
        ></CustomerTickets>
 
       <Footer></Footer>
