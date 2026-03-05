@@ -1,16 +1,16 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const Task = ({ customersTask, resolvedCount, setResolvedCount, setInProgressCount, inProgressCount, removedSelectedTask}) => {
+const Task = ({ customersTask, resolvedCount, setResolvedCount, removedSelectedTask}) => {
 
     const handleResolve = (customersTask) => {
         setResolvedCount([...resolvedCount, customersTask])
         toast.success('Ticket marked as resolved')
         removedSelectedTask(customersTask.id)
-        // setResolvedCount(resolvedCount + 1)
-        // setInProgressCount(inProgressCount - 1)
-        
+    //    setInProgressCount(inProgressCount - 1)
     }
+
+  
     return (
         <div className='space-y-8 py-5'>
 
@@ -33,5 +33,4 @@ const Task = ({ customersTask, resolvedCount, setResolvedCount, setInProgressCou
 };
 
 export default Task;
-
 

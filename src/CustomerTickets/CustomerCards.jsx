@@ -1,17 +1,22 @@
-import React, { use } from 'react';
 import { toast } from 'react-toastify';
-
-
-const CustomerCards = ({ customerPromise, customersTask, setCustomersTask , setInProgressCount, inProgressCount, resolvedCount,  setResolvedCount, removedSelectedTask}) => {
+import { use } from 'react';
+const CustomerCards = ({ customerPromise, customersTask, setCustomersTask , setInProgressCount, inProgressCount}) => {
 
     const customerData = use(customerPromise);
 
     const handleTickets = (customer) => {
-        setCustomersTask([...customersTask, customer])
-        toast.success('Ticket added to Task Status')
-        
-    };
 
+    const alreadyAdded = customersTask.find(task => task.id === customer.id);
+
+    if (alreadyAdded) {
+        toast.error('Ticket already added');
+        return;
+    }
+
+    setCustomersTask([...customersTask, customer]);
+    setInProgressCount(inProgressCount + 1);
+    toast.success('Ticket added to Task Status');
+};
 
     return (
         <div className='grid lg:grid-cols-2 gap-5 mt-5'>
@@ -20,9 +25,7 @@ const CustomerCards = ({ customerPromise, customersTask, setCustomersTask , setI
                     <div
                         key={customer.id}
                         onClick={() => {
-                        handleTickets(customer) 
-                        setInProgressCount(inProgressCount + 1)
-                        
+                        handleTickets(customer)                      
                         }
                         }
                         className="card bg-base-100 card-lg shadow-lg border-2 border-white cursor-pointer"
